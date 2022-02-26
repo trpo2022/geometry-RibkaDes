@@ -28,12 +28,12 @@ int main()
     }
     i = 7;
     while (word[i] != ',') {
-        if (isdigit(word[i]) == 1 or (word[i] == '-' && isdigit(word[i + 1]))
-            or (word[i] == '.' && isdigit(word[i + 1]) && isdigit(word[i - 1])))
+        if (isdigit(word[i]) == 1 || (word[i] == '-' && isdigit(word[i + 1]))
+            || (word[i] == '.' && isdigit(word[i + 1]) && isdigit(word[i - 1])))
             printf("%c", word[i]);
         else if (
                 p == 0 && word[i] == ' '
-                && (isdigit(word[i + 1]) or isdigit(word[i - 1]))) {
+                && (isdigit(word[i + 1]) || isdigit(word[i - 1]))) {
             printf("%c", word[i]);
             p = 1;
         } else {
@@ -49,13 +49,13 @@ int main()
     printf("%c", word[i]);
     i++;
     while (word[i] != ')') {
-        if (isdigit(word[i]) == 1 or (word[i] == '-' && isdigit(word[i + 1])))
+        if (isdigit(word[i]) == 1 || (word[i] == '-' && isdigit(word[i + 1])))
             printf("%c", word[i]);
         else if (word[i] == ' ' && isdigit(word[i + 1]) && word[i - 1] == ',')
             printf("%c", word[i]);
         else if (
                 word[i] == '.'
-                && (isdigit(word[i + 1]) or isdigit(word[i - 1])))
+                && (isdigit(word[i + 1]) || isdigit(word[i - 1])))
             printf("%c", word[i]);
         else {
             printf("%c\n", word[i]);
