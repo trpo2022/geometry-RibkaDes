@@ -1,0 +1,12 @@
+main
+
+*.o
+*.ko
+*.obj
+*.elf
+
+*.out
+*.app
+*.exe
+
+*.lib
